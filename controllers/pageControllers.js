@@ -5,12 +5,12 @@ exports.getAboutPage = (req, res) => {
 }
 
 exports.getAddPage = (req, res) => {
-    res.render("add")
+    res.render("add_post")
 }
 
-exports.getEditPage =  async (req, res) => {
+exports.getEditPage = async (req, res) => {
     const blog = await Blog.findOne({ _id: req.params.id });
-    res.render('edit', {
+    res.render('edit_post', {
         blog,
     });
 }

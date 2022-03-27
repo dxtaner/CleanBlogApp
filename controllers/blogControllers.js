@@ -8,11 +8,10 @@ exports.getAllBlogs = async (req, res) => {
 
 exports.getBlog = async (req, res) => {
     const blog = await Blog.findById(req.params.id);
-    res.render("blog", { blog })
+    res.render("post", { blog })
 }
 
 exports.createBlog = async (req, res) => { // async - await
-    console.log(req.body)
     await Blog.create(req.body)
     res.redirect("/")
 }

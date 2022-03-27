@@ -23,12 +23,12 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <form method="POST" action="/blogs" novalidate encType="multipart/form-data">
+        <form method="POST" action='/blogs' novalidate>
           
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Post <Title></Title></label>
-              <input type="text" class="form-control" name="title" placeholder="Title" required data-validation-required-message="Please enter your title.">
+              <input type="text" class="form-control" name="title" placeholder="Title" required >
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -36,7 +36,7 @@
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Post Detail</label>
-              <textarea rows="5" class="form-control" name="detail" placeholder="Detail" required data-validation-required-message="Please enter a message."></textarea>
+              <textarea rows="5" class="form-control" name="detail" placeholder="Detail" required ></textarea>
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -44,7 +44,7 @@
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Post Author</label>
-              <input type="text" class="form-control" name="author" placeholder="Author" required data-validation-required-message="Please enter a message."></input>
+              <input type="text" class="form-control" name="author" placeholder="Author" required></input>
               <p class="help-block text-danger"></p>
             </div>
           </div>

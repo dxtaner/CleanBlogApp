@@ -1,8 +1,9 @@
 const Blog = require("../models/Blog")
+const fs = require("fs");
 
 exports.getAllBlogs = async (req, res) => {
     const blogs = await Blog.find({}).sort('-dateCreated');
-    res.render("index", { blogs });
+    res.render("index", { blogs: blogs });
 }
 
 exports.getBlog = async (req, res) => {
@@ -11,9 +12,8 @@ exports.getBlog = async (req, res) => {
 }
 
 exports.createBlog = async (req, res) => { // async - await
-    await Blog.create({
-        ...req.body,
-    })
+    console.log(req.body)
+    await Blog.create(req.body)
     res.redirect("/")
 }
 
@@ -28,6 +28,6 @@ exports.updateBlog = async (req, res) => {
 
 exports.deleteBlog = async (req, res) => {
     const blog = await Blog.findOne({ _id: req.params.id });
-    await Blog.findByIdAndRemove(req.params.id);
+    await Blog.findByIdAndRemove(blog);
     res.redirect('/');
 }

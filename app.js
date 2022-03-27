@@ -8,8 +8,8 @@ const methodOverride = require("method-override");
 const blogController = require('./controllers/blogControllers');
 const pageController = require('./controllers/pageControllers');
 
-// connect db 
-mongoose.connect('mongodb://localhost/blogPost-test-db', {
+// connect db  fSrPrqzcECdwSCGL
+mongoose.connect('mongodb+srv://taner:fSrPrqzcECdwSCGL@cluster0.cczys.mongodb.net/cleanBlog-db?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {

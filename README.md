@@ -1,7 +1,5 @@
 # test
-#� �C�l�e�a�n�B�l�o�g�A�p�p�
-�
-�
+Clean Blog Post
 <br>
 
 https://cleanblogappp.herokuapp.com/

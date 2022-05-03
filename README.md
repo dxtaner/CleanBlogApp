@@ -1,5 +1,4 @@
-# test
-Clean Blog Post
+# Clean Blog Post
 <br>
 
 https://cleanblogappp.herokuapp.com/

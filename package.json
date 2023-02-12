@@ -14,7 +14,7 @@
   "author": "Taner",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.15",
+    "nodemon": "^2.0.20",
     "prettier": "2.6.0",
      "async": ">=2.6.4",
     "ejs": ">=3.1.7"
